@@ -1,0 +1,163 @@
+/* Editorial serif + engineered sans (graceful fallback to system stacks if blocked) */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --charcoal: #121417;
+  --soft-charcoal: #1a1f24;
+  --stone: #e7e1d7;
+  --muted-stone: rgba(231, 225, 215, 0.72);
+  --brass: #b08d57;
+  --brass-hover: #8f7449;
+  --hairline: rgba(231, 225, 215, 0.1);
+  --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--charcoal);
+  color: var(--stone);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(176, 141, 87, 0.35);
+  color: var(--stone);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--charcoal);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(176, 141, 87, 0.35);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(176, 141, 87, 0.55);
+}
+
+@layer components {
+  .eyebrow {
+    @apply text-[11px] sm:text-xs uppercase tracking-wideLabel font-sans text-brass;
+  }
+
+  .section-label {
+    @apply text-[11px] sm:text-xs uppercase tracking-wideLabel font-sans text-mutedStone;
+  }
+
+  .heading-display {
+    @apply font-serif font-normal tracking-tighter2 text-stone leading-[1.08];
+  }
+
+  .heading-section {
+    @apply font-serif font-normal tracking-tighter2 text-stone leading-[1.12];
+  }
+
+  .body-lg {
+    @apply font-sans text-base sm:text-lg text-mutedStone leading-relaxed;
+  }
+
+  .body-md {
+    @apply font-sans text-sm sm:text-base text-mutedStone leading-relaxed;
+  }
+
+  .hairline-border {
+    border-color: var(--hairline);
+  }
+
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+
+  .section-pad {
+    @apply py-20 sm:py-28 lg:py-32;
+  }
+
+  .input-field {
+    @apply w-full bg-softCharcoal border border-hairline rounded-lg px-4 py-3.5
+      text-stone text-sm font-sans placeholder:text-mutedStone/50
+      focus:outline-none focus:border-brass/50 focus:ring-1 focus:ring-brass/30
+      transition-all duration-300 ease-premium;
+  }
+
+  .label-field {
+    @apply block text-[11px] uppercase tracking-wideLabel text-mutedStone mb-2 font-sans;
+  }
+}
+
+/* Form select styling */
+select.input-field {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23B08D57' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+
+textarea.input-field {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Table styling */
+.premium-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.premium-table th {
+  text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--brass);
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--hairline);
+  font-weight: 500;
+}
+
+.premium-table td {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--hairline);
+  color: var(--muted-stone);
+  font-size: 0.875rem;
+  vertical-align: top;
+}
+
+.premium-table tr:hover td {
+  background: rgba(231, 225, 215, 0.02);
+}
