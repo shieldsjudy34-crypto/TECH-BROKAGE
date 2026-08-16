@@ -39,6 +39,7 @@ export const media = {
   about: {
     header: "/images/about-header.png",
     california: "/images/about-california.png",
+    texas: "/images/about-texas.png",
     dubai: "/images/about-dubai.png",
     singapore: "/images/about-singapore.png",
     china: "/images/about-china.png",

@@ -56,7 +56,7 @@ export default function ContactPage() {
             title="Reachable across regions."
             lead="Engagements are coordinated from California and served across the regions below. No public addresses—briefings are where introductions happen."
           />
-          <div className="mt-14 grid gap-px overflow-hidden rounded-sm border border-hairline bg-hairline sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-14 grid gap-px overflow-hidden rounded-sm border border-hairline bg-hairline sm:grid-cols-2 lg:grid-cols-5">
             {site.presence.map((region, i) => (
               <AnimatedReveal key={region} delay={i * 0.05} className="bg-charcoal">
                 <div className="group h-full bg-soft/30 p-8 text-center transition-colors duration-300 hover:bg-soft/60">
@@ -122,6 +122,8 @@ function regionNote(region: string): string {
   switch (region) {
     case "California":
       return "Headquarters — global coordination.";
+    case "Texas":
+      return "Regional presence — U.S. engagement coverage.";
     case "Dubai":
       return "Regional presence — Gulf engagement coverage.";
     case "Singapore":

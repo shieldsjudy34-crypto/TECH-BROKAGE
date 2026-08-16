@@ -31,7 +31,7 @@ export default function AboutPage() {
             discipline.
           </>
         }
-        lead="A brokerage that treats institutional buying as a craft—structured, discreet, and consistent across four regions."
+        lead="A brokerage that treats institutional buying as a craft—structured, discreet, and consistent across five regions."
         image={media.about.header}
         imageAlt="California civic building at blue hour"
       />
@@ -83,19 +83,21 @@ export default function AboutPage() {
           <SectionHeading
             index="02"
             eyebrow="Global footprint"
-            title="Four regions. One standard."
-            lead="Headquarters in California, with presence across three further markets. No street addresses are published—deliberately."
+            title="Five regions. One standard."
+            lead="Headquarters in California, with presence in Texas and three further markets. No street addresses are published—deliberately."
           />
           <div className="mt-14 grid gap-px overflow-hidden rounded-sm border border-hairline bg-hairline sm:grid-cols-2">
             {presenceRegions.map((region, i) => {
               const still =
                 region.name === "California"
                   ? media.about.california
-                  : region.name === "Dubai"
-                    ? media.about.dubai
-                    : region.name === "Singapore"
-                      ? media.about.singapore
-                      : media.about.china;
+                  : region.name === "Texas"
+                    ? media.about.texas
+                    : region.name === "Dubai"
+                      ? media.about.dubai
+                      : region.name === "Singapore"
+                        ? media.about.singapore
+                        : media.about.china;
               return (
                 <AnimatedReveal key={region.name} delay={i * 0.05} className="bg-charcoal">
                   <div className="group flex h-full flex-col bg-soft/30 transition-colors duration-300 hover:bg-soft/60">
@@ -188,7 +190,7 @@ export default function AboutPage() {
                 index="04"
                 eyebrow="Advisory network"
                 title="Specialists we convene when the brief requires it."
-                lead="Procurement counsel, security-documentation reviewers, and regional market specialists across California, Dubai, Singapore, and China. Named introductions are arranged under NDA—never published as a roster."
+                lead="Procurement counsel, security-documentation reviewers, and regional market specialists across California, Texas, Dubai, Singapore, and China. Named introductions are arranged under NDA—never published as a roster."
               />
             </div>
           </div>
@@ -227,7 +229,7 @@ export default function AboutPage() {
             index="06"
             eyebrow="Headquarters"
             title="Headquartered in California, USA."
-            lead="Global coordination runs from California. Regional presence in Dubai, Singapore, and China covers each market's buying environment."
+            lead="Global coordination runs from California. Regional presence in Texas, Dubai, Singapore, and China covers each market's buying environment."
             align="center"
           />
         </Container>

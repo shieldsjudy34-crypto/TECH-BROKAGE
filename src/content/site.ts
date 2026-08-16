@@ -7,7 +7,7 @@ export const site = {
   name: "PDSCOMM",
   domain: "pdscomm.com",
   hq: "California, USA",
-  presence: ["California", "Dubai", "Singapore", "China"],
+  presence: ["California", "Texas", "Dubai", "Singapore", "China"],
   description:
     "PDSCOMM connects government and enterprise buyers with qualified AI software providers—supporting sourcing, evaluation, and due diligence from requirements to shortlist.",
   ctas: {
@@ -605,6 +605,11 @@ export const presenceRegions = [
     note: "Global coordination and commercial function. No street address published.",
   },
   {
+    name: "Texas",
+    role: "Regional presence",
+    note: "U.S. engagement coverage beyond California headquarters. No street address published.",
+  },
+  {
     name: "Dubai",
     role: "Regional presence",
     note: "Gulf and broader Middle East engagement coverage.",
@@ -627,7 +632,7 @@ export const leadership = [
     role: "Founder & Managing Partner",
     href: "/founder",
     background:
-      "Sets the firm’s posture: NDA-first intake, requirements before market noise, and a shortlist a procurement team can defend in writing. Coordinates the four-region practice from California.",
+      "Sets the firm’s posture: NDA-first intake, requirements before market noise, and a shortlist a procurement team can defend in writing. Coordinates the five-region practice from California.",
     focus: "Buyer engagements, final shortlist quality, and confidentiality standard",
   },
   {
@@ -653,14 +658,14 @@ export const founder = {
   role: "Founder & Managing Partner",
   location: "California, USA",
   photoNote:
-    "Portrait placeholder — replace with a current live photograph of Ruben Wagner before launch.",
+    "Ruben Wagner, Founder & Managing Partner.",
   lede:
     "Ruben Wagner founded PDSCOMM so government and enterprise buyers could source AI software the way they already buy everything else that matters: with requirements on paper, vendors under diligence, and a shortlist a procurement team can defend.",
   facts: [
     { label: "Seat", value: "Founder & Managing Partner" },
     { label: "Based", value: "California, USA" },
     { label: "Practice", value: "Institutional AI software brokerage" },
-    { label: "Regions", value: "California · Dubai · Singapore · China" },
+    { label: "Regions", value: "California · Texas · Dubai · Singapore · China" },
   ],
   chapters: [
     {
@@ -680,11 +685,11 @@ export const founder = {
       ],
     },
     {
-      title: "Four markets, one standard",
+      title: "Five markets, one standard",
       body: [
-        "California remained the base. The work did not. Wagner spent sustained time in the buying environments that now sit on PDSCOMM’s map—Dubai and the broader Gulf, Singapore and the Southeast Asian corridor, and China as a technology-landscape and partner-market—not as a tourist of “global,” but as someone watching how AI software was being sold into governments and enterprises that do not share a procurement culture.",
+        "California remained the base. Texas was added as a U.S. regional presence—same standard, a second American buying environment. The work did not stay domestic. Wagner spent sustained time in the buying environments that now sit on PDSCOMM’s map—Dubai and the broader Gulf, Singapore and the Southeast Asian corridor, and China as a technology-landscape and partner-market—not as a tourist of “global,” but as someone watching how AI software was being sold into governments and enterprises that do not share a procurement culture.",
         "What he saw was consistent even when the paperwork was not. In every region, vendors arrived with capability claims. In every region, buyers arrived with constraints they had not yet written. The American instinct was to fill the gap with a consultant’s workshop. The marketplace instinct was to fill it with a catalog. Neither produced a shortlist a serious buyer could stand behind.",
-        "Wagner’s conclusion was unfashionable and, to him, obvious: the missing institution was a brokerage. Not a consultancy that dabbles in AI. Not a marketplace that auctions vendors. A practice that qualifies providers before they meet a buyer, holds NDAs as the default, and treats evaluation as a documented process rather than a series of impressions. PDSCOMM was built to be that practice, with California as headquarters and the other three regions as presence—not flags on a slide.",
+        "Wagner’s conclusion was unfashionable and, to him, obvious: the missing institution was a brokerage. Not a consultancy that dabbles in AI. Not a marketplace that auctions vendors. A practice that qualifies providers before they meet a buyer, holds NDAs as the default, and treats evaluation as a documented process rather than a series of impressions. PDSCOMM was built to be that practice, with California as headquarters and Texas, Dubai, Singapore, and China as presence—not flags on a slide.",
       ],
     },
     {
@@ -699,7 +704,7 @@ export const founder = {
       title: "How he works now",
       body: [
         "Wagner still takes the first briefing on a serious buyer engagement. Fifteen minutes is the advertised length because that is usually enough to know whether the requirement is real, whether the buyer can put a committee around it, and whether PDSCOMM is the right instrument. If the answer is no, he says so. If the answer is yes, the work that follows is documentation, not a relationship campaign.",
-        "Day to day he coordinates the four-region practice from California: buyer-side engagements, the quality of the final shortlist, and the confidentiality standard that every person in the firm is expected to keep. Named partners and specialists are introduced under NDA when a brief requires them. They are not published as a roster, because a public roster is an invitation to be sold to.",
+        "Day to day he coordinates the five-region practice from California: buyer-side engagements, the quality of the final shortlist, and the confidentiality standard that every person in the firm is expected to keep. Named partners and specialists are introduced under NDA when a brief requires them. They are not published as a roster, because a public roster is an invitation to be sold to.",
         "People who work with him describe a narrow set of preferences: fewer meetings, more files; fewer adjectives, more constraints; a shortlist of three that can be compared, not a longlist of twelve that cannot. He still reads the packet. That is not branding. It is how he decides whether PDSCOMM did the job.",
       ],
     },
@@ -718,7 +723,7 @@ export const founder = {
     {
       period: "Gulf & Asia",
       title: "The same gap, different paperwork",
-      body: "Extended time in Dubai, Singapore, and China market environments. Confirmed that AI software was being sold globally with the same demo-first habit, while buyers in each region still needed documentation their own procurement culture would accept. The four-region map of PDSCOMM comes from this work, not from a later expansion slide.",
+      body: "Extended time in Dubai, Singapore, and China market environments, with Texas as the second U.S. presence. Confirmed that AI software was being sold globally with the same demo-first habit, while buyers in each region still needed documentation their own procurement culture would accept. The five-region map of PDSCOMM comes from this work, not from a later expansion slide.",
     },
     {
       period: "The thesis",
@@ -728,7 +733,7 @@ export const founder = {
     {
       period: "PDSCOMM",
       title: "Founder & Managing Partner",
-      body: "Established the firm from California with presence in Dubai, Singapore, and China. Sets intake posture, shortlist standard, and confidentiality. Still takes the opening briefing. The public biography on this page will be edited to the dated record; the operating standard will not.",
+      body: "Established the firm from California with presence in Texas, Dubai, Singapore, and China. Sets intake posture, shortlist standard, and confidentiality. Still takes the opening briefing. The public biography on this page will be edited to the dated record; the operating standard will not.",
     },
   ],
   workingWith: [
@@ -750,7 +755,7 @@ export const founder = {
     },
   ],
   closing:
-    "This page is a working biography. Dates, prior seats, and personal particulars will be replaced with Ruben Wagner’s own record. Until then, treat the name as the placeholder and the method as the fact: a California-based founder running a four-region AI software brokerage from the buyer’s side of the table.",
+    "This page is a working biography. Dates, prior seats, and personal particulars will be replaced with Ruben Wagner’s own record. Until then, treat the name as the placeholder and the method as the fact: a California-based founder running a five-region AI software brokerage from the buyer’s side of the table.",
 };
 
 export const operatingPrinciples = [
@@ -840,7 +845,7 @@ export const buyerIntakeFields: IntakeField[] = [
     name: "region",
     label: "Region",
     type: "select",
-    options: ["California", "Dubai", "Singapore", "China", "Other"],
+    options: ["California", "Texas", "Dubai", "Singapore", "China", "Other"],
     required: true,
   },
   {

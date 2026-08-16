@@ -39,7 +39,7 @@ export default function FounderPage() {
                 <div className="relative aspect-[3/4] overflow-hidden rounded-sm border border-hairline bg-soft/40">
                   <Image
                     src={media.founder.portrait}
-                    alt="Portrait placeholder for Ruben Wagner, Founder of PDSCOMM"
+                    alt="Ruben Wagner, Founder & Managing Partner of PDSCOMM"
                     fill
                     className="object-cover object-top"
                     sizes="(min-width: 1024px) 40vw, 100vw"
