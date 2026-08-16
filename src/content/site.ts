@@ -920,15 +920,15 @@ export const partnerIntakeFields: IntakeField[] = [
 /* ------------------------------- Footer ------------------------------- */
 
 export const footerBuyerLinks = [
-  { label: "Engagement Models", href: "/buyers" },
-  { label: "Procurement Documentation", href: "/buyers" },
-  { label: "Due Diligence Coverage", href: "/buyers" },
-  { label: "Use-Case Library", href: "/solutions" },
+  { label: "Engagement Models", href: "/buyers/#engagement-models" },
+  { label: "Procurement Documentation", href: "/buyers/#procurement-documentation" },
+  { label: "Due Diligence Coverage", href: "/buyers/#due-diligence" },
+  { label: "Use-Case Library", href: "/solutions/" },
 ];
 
 export const footerPartnerLinks = [
-  { label: "What We Look For", href: "/technology-partners" },
-  { label: "Partner Tiers", href: "/technology-partners" },
-  { label: "Onboarding Process", href: "/technology-partners" },
-  { label: "Partner Intake", href: "/contact" },
+  { label: "What We Look For", href: "/technology-partners/#what-we-look-for" },
+  { label: "Partner Tiers", href: "/technology-partners/#partner-tiers" },
+  { label: "Onboarding Process", href: "/technology-partners/#onboarding" },
+  { label: "Partner Intake", href: "/contact/" },
 ];

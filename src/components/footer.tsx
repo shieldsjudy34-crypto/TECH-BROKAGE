@@ -111,11 +111,10 @@ export function SiteFooter() {
             © {new Date().getFullYear()} {site.name}. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
-            {/* Legal placeholders — wire to real policies before launch. */}
-            <Link href="#" className="link-underline text-stone/50">
+            <Link href="/privacy/" className="link-underline text-stone/50">
               Privacy
             </Link>
-            <Link href="#" className="link-underline text-stone/50">
+            <Link href="/terms/" className="link-underline text-stone/50">
               Terms
             </Link>
           </div>

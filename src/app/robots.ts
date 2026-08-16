@@ -9,5 +9,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
     },
     sitemap: "https://pdscomm.com/sitemap.xml",
+    host: "https://pdscomm.com",
   };
 }

@@ -13,16 +13,21 @@ const routes = [
   "/founder",
   "/insights",
   "/contact",
+  "/privacy",
+  "/terms",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://pdscomm.com";
   const now = new Date();
 
-  return routes.map((route) => ({
-    url: `${base}${route}`,
-    lastModified: now,
-    changeFrequency: "monthly",
-    priority: route === "" ? 1 : 0.8,
-  }));
+  return routes.map((route) => {
+    const path = route === "" ? "/" : `${route}/`;
+    return {
+      url: `${base}${path}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: route === "" ? 1 : 0.8,
+    };
+  });
 }

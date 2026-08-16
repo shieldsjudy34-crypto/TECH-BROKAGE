@@ -88,7 +88,7 @@ export default function BuyersPage() {
       />
 
       {/* Engagement models */}
-      <Section>
+      <Section id="engagement-models">
         <Container>
           <SectionHeading
             index="01"
@@ -111,7 +111,7 @@ export default function BuyersPage() {
       </Section>
 
       {/* Procurement documentation */}
-      <Section className="border-t border-hairline bg-soft/20">
+      <Section id="procurement-documentation" className="border-t border-hairline bg-soft/20">
         <Container>
           <SectionHeading
             index="02"
@@ -135,8 +135,7 @@ export default function BuyersPage() {
         </Container>
       </Section>
 
-      {/* Due diligence coverage */}
-      <Section>
+      <Section id="due-diligence">
         <Container>
           <div className="grid gap-14 lg:grid-cols-12">
             <div className="lg:col-span-4">
@@ -253,8 +252,7 @@ export default function BuyersPage() {
         </Container>
       </Section>
 
-      {/* Use-case library */}
-      <Section>
+      <Section id="use-case-library">
         <Container>
           <SectionHeading
             index="05"

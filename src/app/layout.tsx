@@ -36,6 +36,13 @@ export const metadata: Metadata = {
     "government AI",
     "due diligence",
   ],
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/icon.png", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png" }],
+  },
   openGraph: {
     siteName: "PDSCOMM",
     locale: "en_US",
@@ -62,6 +69,10 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
 };
 
@@ -72,12 +83,36 @@ export const viewport: Viewport = {
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        name: "PDSCOMM",
+        url: "https://pdscomm.com",
+        logo: "https://pdscomm.com/icon.png",
+        description:
+          "PDSCOMM connects government and enterprise buyers with qualified AI software providers—supporting sourcing, evaluation, and due diligence from requirements to shortlist.",
+        areaServed: ["California", "Texas", "Dubai", "Singapore", "China"],
+      },
+      {
+        "@type": "WebSite",
+        name: "PDSCOMM",
+        url: "https://pdscomm.com",
+      },
+    ],
+  };
+
   return (
     <html
       lang="en"
       className={`${inter.variable} ${newsreader.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-charcoal font-sans text-stone">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <Providers>
           <a
             href="#main"

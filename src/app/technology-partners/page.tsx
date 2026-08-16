@@ -35,8 +35,7 @@ export default function TechnologyPartnersPage() {
         imageAlt="Uninhabited specialist atelier with brass instruments"
       />
 
-      {/* What we look for */}
-      <Section>
+      <Section id="what-we-look-for">
         <Container>
           <SectionHeading
             index="01"
@@ -59,7 +58,7 @@ export default function TechnologyPartnersPage() {
       </Section>
 
       {/* Partner tiers */}
-      <Section className="border-t border-hairline bg-soft/20">
+      <Section id="partner-tiers" className="border-t border-hairline bg-soft/20">
         <Container>
           <SectionHeading
             index="02"
@@ -95,13 +94,7 @@ export default function TechnologyPartnersPage() {
       </Section>
 
       {/* Onboarding process */}
-      <Section>
-        <Container>
-          <div className="grid gap-14 lg:grid-cols-12">
-            <div className="lg:col-span-4">
-              <SectionHeading
-                index="03"
-                eyebrow="Onboarding"
+      <Section id="onboarding">
                 title="Six inputs. One structured intake."
                 lead="A disciplined onboarding builds the foundation for every future buyer introduction."
               />
