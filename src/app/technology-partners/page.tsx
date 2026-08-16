@@ -95,6 +95,12 @@ export default function TechnologyPartnersPage() {
 
       {/* Onboarding process */}
       <Section id="onboarding">
+        <Container>
+          <div className="grid gap-14 lg:grid-cols-12">
+            <div className="lg:col-span-4">
+              <SectionHeading
+                index="03"
+                eyebrow="Onboarding"
                 title="Six inputs. One structured intake."
                 lead="A disciplined onboarding builds the foundation for every future buyer introduction."
               />
